@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action</title>
+    <link rel="icon" href="pictures/favicon-32x32.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/genres.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="index.html">AnimeHub</a></div>
+        <div class="browse">
+            <button id="browse-btn">Browse</button>
+            <div class="content" id="browse-content">
+                <div class="left">
+                    <a href="popular.html">Popular</a>
+                    <a href="new.html">New</a>
+                    <a href="movies.html">Movies</a>
+                </div>
+                <div class="right">
+                    <a href="action.html">Action</a>
+                    <a href="comedy.html">Comedy</a>
+                    <a href="drama.html">Drama</a>
+                    <a href="fantasy.html">Fantasy</a>
+                    <a href="horror.html">Horror</a>
+                    <a href="romance.html">Romance</a>
+                    <a href="scifi.html">Sci-Fi</a>
+                </div>
+            </div>
+        </div>
+        <div class="search">
+            <form id="search-form">
+                <input type="text" id="search" placeholder="Search">
+                <div class="search-results" id="search-results"></div>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card" onclick="location.href='demonslayer.html';">
+            <img src="assets/pictures/DemonSlayer.jpg" alt="Image 1">
+            <div class="hover-effect">
+                <span>24 episodes</span>
+                <span>Genre: Action, Fantasy, Drama</span>
+            </div>
+            <span>Demon Slayer</span>
+        </div>
+        <div class="card" onclick="location.href='onepiece.html';">
+            <img src="assets/pictures/OnePiece.jpg" alt="Image 1">
+            <div class="hover-effect">
+                <span>1000+ episodes</span>
+                <span>Genre: Adventure, Fantasy, Action</span>
+            </div>
+           <span>One Piece</span>
+        </div>
+        <div class="card" onclick="location.href='eminence.html';">
+            <img src="assets/pictures/eminence.jpg" alt="Image 1">
+            <div class="hover-effect">
+                <span>20 episodes</span>
+                <span>Genre: Fantasy, Action, Comedy</span>
+            </div>
+           <span>Eminence in Shadow</span>
+        </div>
+        <div class="card" onclick="location.href='myhero.html';">
+            <img src="assets/pictures/myhero.jpg" alt="Image 1">
+            <div class="hover-effect">
+                <span>88 episodes</span>
+                <span>Genre: Action, Superhero</span>
+            </div>
+            <span>My Hero Academia</span>
+        </div>
+        <div class="card" onclick="location.href='mushoku.html';">
+            <img src="assets/pictures/mushoku.jpg" alt="Image 1">
+            <div class="hover-effect">
+                <span>48 episodes</span>
+                <span>Genre: Isekai, Action, Adventure, Ecchi</span>
+            </div>
+          <span>Mushoku Tensei</span>
+        </div>
+    </div>
+    <script src="assets/js/genres.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeHub: Movies</title>
+    <link rel="icon" href="assets/pictures/favicon-32x32.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/genres.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="index.html">AnimeHub</a></div>
+        <div class="browse">
+            <button id="browse-btn">Browse</button>
+            <div class="content" id="browse-content">
+                <div class="left">
+                    <a href="popular.html">Popular</a>
+                    <a href="new.html">New</a>
+                    <a href="movies.html">Movies</a>
+                </div>
+                <div class="right">
+                    <a href="action.html">Action</a>
+                    <a href="comedy.html">Comedy</a>
+                    <a href="drama.html">Drama</a>
+                    <a href="fantasy.html">Fantasy</a>
+                    <a href="horror.html">Horror</a>
+                    <a href="romance.html">Romance</a>
+                    <a href="scifi.html">Sci-Fi</a>
+                </div>
+            </div>
+        </div>
+        <div class="search">
+            <form id="search-form">
+                <input type="text" id="search" placeholder="Search">
+                <div class="search-results" id="search-results"></div>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card" onclick="location.href='yourname.html';">
+            <img src="assets/pictures/YourName.jpg" alt="Image 1">
+            <div class="hover-effect">
+                <span>Movie</span>
+                <span>Genre: Romance, Sci-fi, Drama</span>
+            </div>
+            <span>Your name</span>
+        </div>
+    </div>
+
+    <script src="assets/js/genres.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animehub</title>
+    <link rel="icon" href="assets/pictures/favicon-32x32.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">AnimeHub</a></div>
+            <div class="browse">
+                <button id="browse-btn">Browse</button>
+                <div class="content" id="browse-content">
+                    <div class="left">
+                        <a href="popular.html">Popular</a>
+                        <a href="new.html">New</a>
+                        <a href="movies.html">Movies</a>
+                    </div>
+                    <div class="right">
+                        <a href="action.html">Action</a>
+                        <a href="comedy.html">Comedy</a>
+                        <a href="drama.html">Drama</a>
+                        <a href="fantasy.html">Fantasy</a>
+                        <a href="horror.html">Horror</a>
+                        <a href="romance.html">Romance</a>
+                        <a href="scifi.html">Sci-Fi</a>
+                    </div>
+                </div>
+            </div>
+            <div class="search">
+                <form id="search-form">
+                    <input type="text" id="search" placeholder="Search" autocomplete="off">
+                    <div class="search-results" id="search-results"></div>
+                </form>
+            </div>
+        </nav>
+        <div class="mainpage-container">
+            <div class="mainpage">
+                <div class="slider">
+                    <div class="slides">
+                        <img src="assets/pictures/YourName.jpg" alt="imageYourName">
+                        <img src="assets/pictures/DemonSlayer.jpg" alt="DemonSlayer">
+                        <img src="assets/pictures/jjk.jpg" alt="JujutsuKaisen">
+                    </div>
+                    <div class="information">
+                        <div class="information-card displayCard">
+                            <span>Two teenagers share a profound, magical connection upon discovering they are swapping bodies. Things manage to become even more complicated when the boy and girl decide to meet in person. </span>
+                            <button onclick="location.href='yourname.html'"><a href="yourname.html">Learn More</a></button>
+                        </div>
+                        <div class="information-card">
+                            <span>A family is attacked by demons and only two members survive- Tanjiro and his sister, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cure his sister.</span>
+                            <button onclick="location.href='demonslayer.html'"><a href="demonslayer.html">Learn More</a></button>
+                        </div>
+                        <div class="information-card">
+                            <span>A boy swallows a cursed talisman - the finger of a demon - and becomes cursed himself. He enters a sorcerer's school to be able to locate the demon's other body parts and thus exorcise him.</span>
+                            <button onclick="location.href='jujutsukaisen.html'"><a href="">Learn More</a></button>
+                        </div>
+                    </div>
+                    <button class="prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="next" onclick="nextSlide()">&#10095;</button>
+                </div>
+            </div>
+        </div>
+        <h2 class="popular-heading">Popular</h2>
+        <div class="popular-container">
+            <button class="popular-prev" onclick="prevPopular()">&#10094;</button>
+            <div class="popular-slider">
+                <div class="popular-card" onclick="location.href='demonslayer.html';">
+                    <img src="assets/pictures/DemonSlayer.jpg" alt="">
+                    <div class="hover-effect">
+                        <span>24 episodes</span>
+                        <span>Genre: Action, Fantasy, Drama</span>
+                    </div>
+                    <span>Demon Slayer</span>
+                </div>
+                <div class="popular-card" onclick="location.href='frieren.html';">
+                    <img src="assets/pictures/Frieren.jpg" alt="">
+                    <div class="hover-effect">
+                        <span>24 episodes</span>
+                        <span>Genre: Action, Fantasy, Drama, Slice of Life, Peak Fiction</span>
+                    </div>
+                    <span>Sousou no Frieren</span>
+                </div>
+                <div class="popular-card" onclick="location.href='mushoku.html';">
+                    <img src="assets/pictures/mushoku.jpg" alt="">
+                    <div class="hover-effect">
+                        <span>24 episodes</span>
+                        <span>Genre: Action, Fantasy, Drama, adventure</span>
+                    </div>
+                    <span>Mushoku Tensei</span>
+                </div>
+                <div class="popular-card" onclick="location.href='onepiece.html';">
+                    <img src="assets/pictures/OnePiece.jpg" alt="">
+                    <div class="hover-effect">
+                        <span>1000+ episodes</span>
+                        <span>Genre: Action, Fantasy, Drama, Adventure</span>
+                    </div>
+                    <span>One Piece</span>
+                </div>
+                <div class="popular-card" onclick="location.href='eminence.html';">
+                    <img src="assets/pictures/eminence.jpg" alt="">
+                    <div class="hover-effect">
+                        <span>24 episodes</span>
+                        <span>Genre: Action, Fantasy, Isekai, Edgelord</span>
+                    </div>
+                    <span>Eminence in Shadow</span>
+                </div>
+                <div class="popular-card" onclick="location.href='yourname.html';">
+                    <img src="assets/pictures/YourName.jpg" alt="">
+                    <div class="hover-effect">
+                        <span>Movie</span>
+                        <span>Genre: Romance, Drama, Sci-Fi</span>
+                    </div>
+                    <span>Your name</span>
+                </div>
+                <div class="popular-card" onclick="location.href='deathnote.html';">
+                    <img src="assets/pictures/deathnote.jpg" alt="">
+                    <div class="hover-effect">
+                        <span>37 episodes</span>
+                        <span>Genre: Psychological, Action, Thriller</span>
+                    </div>
+                    <span>Death Note</span>
+                </div>
+                <div class="popular-card" onclick="location.href='myhero.html';">
+                    <img src="assets/pictures/myhero.jpg" alt="">
+                    <div class="hover-effect">
+                        <span>141 episodes</span>
+                        <span>Genre: Action, Fantasy, Drama</span>
+                    </div>
+                    <span>My hero academia</span>
+                </div>
+                <div class="popular-card" onclick="location.href='drstone.html';">
+                    <img src="assets/pictures/drstone.jpg" alt="">
+                    <div class="hover-effect">
+                        <span>24 episodes</span>
+                        <span>Genre: Isekai, Shonen, Sci-Fi, Comedy</span>
+                    </div>
+                    <span>Dr. Stone</span>
+                </div>
+                <div class="popular-card" onclick="location.href='aot.html';">
+                    <img src="assets/pictures/aot.jpg" alt="">
+                    <div class="hover-effect">
+                        <span>24 episodes</span>
+                        <span>Genre: Action, Dark Fantasy, Drama, Post-Apocalyptic</span>
+                    </div>
+                    <span>Attack on Titan</span>
+                </div>
+            </div>
+            <button class="popular-next" onclick="nextPopular()">&#10095;</button>
+        </div>
+    </div>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
